@@ -1,0 +1,29 @@
+RAM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+Temp_Addrs                                                                        0x0260       5
+payload                                                                           0x0265      33
+
+EEPROM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                                          Register  Size
+------------------------------------------------------------------------------------------------
+Command_Reg                                                                       R5           1
+Status_Reg                                                                        R4           1
+State                                                                             R7           1
+Opr_Mode                                                                          R6           1
+send_actived                                                                      R2.0      1bit
+data1                                                                             R9           1
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+Set_Reg                                                                           0x00075    146
+ext_int2_isr                                                                      0x00107     77
+Send_Data                                                                         0x00154    101
+nRF_Config                                                                        0x001B9     83
+main                                                                              0x0020C     21
+spi                                                                               0x00221      8

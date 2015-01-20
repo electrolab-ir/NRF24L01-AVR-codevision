@@ -1,0 +1,60 @@
+/*****************************************************
+
+Project : nRF24L01+
+Version :
+Date    : 9/25/2013
+Author  : Ali Imanifar
+Company : ECA
+Comments:
+
+
+Chip type               : ATmega32
+Program type            : Application
+AVR Core Clock frequency: 8.000000 MHz
+Memory model            : Small
+External RAM size       : 0
+Data Stack size         : 512
+*****************************************************/
+
+#include <mega32.h>
+#include <nRF24L01+.h>
+#include <stdio.h>
+#include <delay.h>
+
+
+
+
+
+// Declare your global variables here
+
+void main(void)
+{
+// Declare your local variables here
+
+
+
+
+
+
+
+
+nRF_Config(1);
+
+ DDRA=0xff;
+
+
+while (1)
+      {
+      // Place your code here
+      if(State == 1)
+        {
+
+        data1 = payload[1];
+
+
+         PORTA=data1;
+
+        State = 0;
+        }
+      }
+}
